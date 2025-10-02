@@ -321,7 +321,7 @@
               name="subscribe"
               aria-placeholder="E-mail"
             >
-              Subscribe <br />
+              Subscribe
               <input
                 class="subs-input"
                 type="email"
@@ -329,9 +329,11 @@
                 placeholder="E-mail"
               />
             </label>
-            <button type="button" class="subs-buton">
+            <button type="submit" class="subs-buton">
               Subscribe
-              <img src="images/Frame 3.svg" alt="subs" />
+              <svg class="send-icon">
+                <use href="./images/icons.svg#icon-icon-send"></use>
+              </svg>
             </button>
           </form>
         </div>
@@ -340,8 +342,11 @@
         <div id="contact-modal" class="modal">
           <div class="modal-content">
             <a href="#!" class="close">
-              <img src="images/close.svg" alt="close" />
+              <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
             </a>
+
             <h2 class="modal-title">
               Leave your contacts and we will call you back
             </h2>
@@ -349,27 +354,43 @@
             <form class="contact-form">
               <label for="name">Name</label>
               <div class="input-box">
-                <img src="images/person-black-18dp 1.svg" alt="name" />
-                <input id="name" type="text" placeholder="Name" required />
+                <svg class="modal-icon">
+                  <use
+                    class="profile"
+                    href="./images/icons.svg#icon-person-black-18dp-1"
+                  ></use>
+                </svg>
+                <input id="name" type="text" required />
               </div>
 
               <label for="phone">Phone</label>
               <div class="input-box">
-                <img src="images/phone.svg" alt="phone" />
-                <input id="phone" type="tel" placeholder="Phone" required />
+                <svg class="modal-icon">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                <input id="phone" type="tel" required />
               </div>
 
               <label for="email">Email</label>
               <div class="input-box">
-                <img src="images/mail.svg" alt="email" />
-                <input id="email" type="email" placeholder="Email" required />
+                <svg class="modal-icon">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                <input id="email" type="email" required />
               </div>
 
               <label for="comment">Comment</label>
               <textarea id="comment" placeholder="Text input"></textarea>
 
               <label class="checkbox">
-                <input type="checkbox" required />
+                <input type="checkbox" />
+                <svg class="checkbox-icon">
+                  <use
+                    class="empty"
+                    href="./images/icons.svg#icon-tik-icon"
+                  ></use>
+                  <use class="checked" href="./images/icons.svg#icon-tik"></use>
+                </svg>
                 I accept the terms and conditions of the
                 <a href="#">Privacy Policy</a>
               </label>
